@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
 const siteUrl = "https://revitalize.health";
@@ -66,6 +67,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <JsonLd />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
