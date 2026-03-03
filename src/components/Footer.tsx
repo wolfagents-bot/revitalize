@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-navy-950 py-12">
+    <footer className="border-t border-slate-200 bg-slate-900 py-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
@@ -43,15 +43,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-white/5 pt-8">
-          <p className="text-center text-xs leading-relaxed text-slate-600">
+        <div className="mt-8 border-t border-slate-700 pt-8">
+          <p className="text-center text-xs leading-relaxed text-slate-400">
             Disclaimer: The information provided on this website is for
             educational purposes only and is not intended as medical advice. All
             treatments are prescribed and supervised by a licensed physician.
             Results may vary. Peptide therapies are prescribed off-label and
             sourced from FDA-registered compounding pharmacies.
           </p>
-          <p className="mt-4 text-center text-xs text-slate-600">
+          <p className="mt-4 text-center text-xs text-slate-400">
             &copy; {new Date().getFullYear()} Revitalize Performance Medicine.
             All rights reserved.
           </p>

@@ -58,22 +58,22 @@ const peptides = [
 ];
 
 const categoryColors: Record<string, string> = {
-  Recovery: "bg-emerald-500/10 text-emerald-400",
-  "Growth Hormone": "bg-blue-500/10 text-blue-400",
-  Metabolic: "bg-amber-500/10 text-amber-400",
-  Performance: "bg-purple-500/10 text-purple-400",
-  Longevity: "bg-rose-500/10 text-rose-400",
+  Recovery: "bg-emerald-50 text-emerald-700",
+  "Growth Hormone": "bg-blue-50 text-blue-700",
+  Metabolic: "bg-amber-50 text-amber-700",
+  Performance: "bg-purple-50 text-purple-700",
+  Longevity: "bg-rose-50 text-rose-700",
 };
 
 export default function PeptideCatalog() {
   return (
-    <section id="peptides" className="bg-navy-900 py-24">
+    <section id="peptides" className="bg-cream-100 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-white md:text-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
             Peptide & Therapy Catalog
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-400">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
             Medical-grade peptides sourced from FDA-registered pharmacies. Every
             protocol is physician-supervised.
           </p>
@@ -83,26 +83,26 @@ export default function PeptideCatalog() {
           {peptides.map((peptide) => (
             <div
               key={peptide.name}
-              className="group flex flex-col rounded-2xl border border-white/10 bg-navy-950/50 p-6 transition-all hover:border-teal-500/30"
+              className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-teal-500/30 hover:shadow-md"
             >
               <div className="mb-4 flex items-start justify-between">
-                <h3 className="text-lg font-semibold text-white">
+                <h3 className="text-lg font-semibold text-slate-900">
                   {peptide.name}
                 </h3>
                 <span
-                  className={`rounded-full px-2.5 py-1 text-xs font-medium ${categoryColors[peptide.category] ?? "bg-slate-500/10 text-slate-400"}`}
+                  className={`rounded-full px-2.5 py-1 text-xs font-medium ${categoryColors[peptide.category] ?? "bg-slate-100 text-slate-600"}`}
                 >
                   {peptide.category}
                 </span>
               </div>
-              <p className="mb-4 flex-1 text-sm leading-relaxed text-slate-400">
+              <p className="mb-4 flex-1 text-sm leading-relaxed text-slate-600">
                 {peptide.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {peptide.benefits.map((benefit) => (
                   <span
                     key={benefit}
-                    className="rounded-md border border-white/5 bg-white/5 px-2 py-1 text-xs text-slate-400"
+                    className="rounded-md border border-slate-200 bg-slate-50 px-2 py-1 text-xs text-slate-600"
                   >
                     {benefit}
                   </span>

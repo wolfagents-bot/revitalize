@@ -14,10 +14,10 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-navy-950/80 backdrop-blur-lg">
+    <header className="fixed top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#" className="text-xl font-bold tracking-tight text-white">
-          REVITALIZE<span className="text-teal-400">.</span>
+        <a href="#" className="text-xl font-bold tracking-tight text-slate-900">
+          REVITALIZE<span className="text-teal-500">.</span>
         </a>
 
         {/* Desktop nav */}
@@ -26,7 +26,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-slate-300 transition-colors hover:text-teal-400"
+              className="text-sm font-medium text-slate-600 transition-colors hover:text-teal-600"
             >
               {link.label}
             </a>
@@ -41,7 +41,7 @@ export default function Header() {
 
         {/* Mobile hamburger */}
         <button
-          className="text-white md:hidden"
+          className="text-slate-900 md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -51,13 +51,13 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <nav className="border-t border-white/10 bg-navy-950 px-6 py-4 md:hidden">
+        <nav className="border-t border-slate-200 bg-white px-6 py-4 md:hidden">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block py-3 text-sm font-medium text-slate-300 transition-colors hover:text-teal-400"
+              className="block py-3 text-sm font-medium text-slate-600 transition-colors hover:text-teal-600"
             >
               {link.label}
             </a>
