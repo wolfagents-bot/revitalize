@@ -59,13 +59,15 @@ export default function FAQ() {
         <div className="mt-12 space-y-4">
           {faqs.map((faq, index) => (
             <div
-              key={index}
+              key={faq.question}
               className="rounded-xl border border-slate-200 bg-white shadow-sm"
             >
               <button
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
                 className="flex w-full items-center justify-between p-6 text-left"
               >
                 <span className="pr-4 font-medium text-slate-900">
@@ -79,7 +81,11 @@ export default function FAQ() {
                 />
               </button>
               {openIndex === index && (
-                <div className="border-t border-slate-100 px-6 pb-6 pt-4">
+                <div
+                  id={`faq-answer-${index}`}
+                  role="region"
+                  className="border-t border-slate-100 px-6 pb-6 pt-4"
+                >
                   <p className="leading-relaxed text-slate-600">{faq.answer}</p>
                 </div>
               )}

@@ -65,7 +65,7 @@ export default function Header() {
           <a
             href="#contact"
             onClick={() => setMobileOpen(false)}
-            className="mt-2 block rounded-lg bg-teal-500 px-5 py-2.5 text-center text-sm font-semibold text-white"
+            className="mt-2 block rounded-lg bg-teal-500 px-5 py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-teal-600"
           >
             Book Consultation
           </a>

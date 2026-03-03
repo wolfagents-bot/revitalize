@@ -57,7 +57,7 @@ export default function HowItWorks() {
               {index < steps.length - 1 && (
                 <div className="absolute right-0 top-12 hidden h-px w-full translate-x-1/2 bg-gradient-to-r from-teal-500/30 to-transparent lg:block" />
               )}
-              <div className="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-teal-500/30 hover:shadow-md">
                 <div className="mb-4 flex items-center justify-between">
                   <div className="inline-flex rounded-xl bg-teal-50 p-3">
                     <step.icon className="h-5 w-5 text-teal-700" />

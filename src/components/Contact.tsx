@@ -36,7 +36,7 @@ export default function Contact() {
 
             {/* Right - Form */}
             <div className="bg-white/10 p-10 lg:p-14">
-              <form className="space-y-5">
+              <form aria-label="Contact form" className="space-y-5">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label className="mb-1.5 block text-sm font-medium text-teal-100">
