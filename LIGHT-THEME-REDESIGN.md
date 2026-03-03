@@ -19,8 +19,8 @@ This document captures the full plan to convert the Revitalize site from its cur
 | Body text | `text-slate-400` | `text-slate-600` |
 | Borders | `border-white/10` | `border-slate-200` |
 | Icon backgrounds | `bg-teal-500/10` | `bg-teal-50` |
-| Icon color | `text-teal-400` | `text-teal-600` |
-| Accent text | `text-teal-400` | `text-teal-600` / `text-teal-700` |
+| Icon color | `text-teal-400` | `text-teal-700` |
+| Accent text | `text-teal-400` | `text-teal-700` (use `teal-700` for AA compliance) |
 | Footer | `bg-navy-950` | `bg-slate-900` (stays dark) |
 
 Teal remains the primary accent color — ideal for medical/health (conveys trust, calm, professionalism). All combinations pass WCAG AA contrast requirements.
@@ -58,6 +58,8 @@ Footer           → slate-900 (dark anchor)
 ### 1. `src/app/globals.css`
 
 **Replace the `@theme` block** — remove all `navy-*` tokens, add `cream-*` and `teal-700`:
+
+> **Note:** Standard Tailwind colors (`slate-*`, `teal-50`, `emerald-50`, `blue-50`, `amber-50`, `purple-50`, `rose-50` and their `700` counterparts) are available by default in Tailwind v4. Only custom colors (`cream-*`) need explicit `@theme` declarations. If any standard colors are missing at build time, add them to this block.
 
 ```css
 @theme {
@@ -104,13 +106,14 @@ CTA button (`bg-teal-500 text-white`) stays the same — works great on light.
 |------|------|-------|
 | Section bg | `bg-navy-950` | `bg-cream-50` |
 | Gradient orbs | `bg-teal-500/10`, `bg-teal-600/5` | `bg-teal-500/5`, `bg-teal-400/5` |
-| Badge text | `text-teal-400` | `text-teal-700` |
+| Badge | `border-teal-500/30 bg-teal-500/10 text-teal-400` | `border-teal-500/30 bg-teal-500/10 text-teal-700` |
 | H1 | `text-white` | `text-slate-900` |
 | Gradient span | `from-teal-400 to-teal-500` | `from-teal-500 to-teal-600` |
 | Subtitle | `text-slate-400` | `text-slate-600` |
 | Secondary button | `border-slate-700 text-slate-300` | `border-slate-300 text-slate-600 hover:border-teal-500 hover:text-teal-700` |
 | Stats divider | `border-white/10` | `border-slate-200` |
-| Stat values | `text-teal-400` | `text-teal-600` |
+| Stat values | `text-teal-400` | `text-teal-700` |
+| Stat labels | `text-slate-500` | `text-slate-500` (keep) |
 
 ---
 
@@ -124,9 +127,12 @@ CTA button (`bg-teal-500 text-white`) stays the same — works great on light.
 | Cards | `border-white/10 bg-navy-950/50` | `border-slate-200 bg-white shadow-sm` |
 | Card hover | `hover:bg-navy-950` | `hover:shadow-md` |
 | Icon bg | `bg-teal-500/10` | `bg-teal-50` |
-| Icon color | `text-teal-400` | `text-teal-600` |
+| Icon color | `text-teal-400` | `text-teal-700` |
 | Card h3 | `text-white` | `text-slate-900` |
 | Card text | `text-slate-400` | `text-slate-600` |
+| Feature list text | `text-slate-400` | `text-slate-600` |
+| Feature bullet | `bg-teal-500` | `bg-teal-500` (keep) |
+| Card hover border | `hover:border-teal-500/30` | `hover:border-teal-500/30` (keep) |
 
 ---
 
@@ -140,7 +146,7 @@ CTA button (`bg-teal-500 text-white`) stays the same — works great on light.
 | Connector gradient | `from-teal-500/40` | `from-teal-500/30` |
 | Cards | `border-white/5 bg-navy-900/50` | `border-slate-200 bg-white shadow-sm` |
 | Icon bg | `bg-teal-500/10` | `bg-teal-50` |
-| Icon color | `text-teal-400` | `text-teal-600` |
+| Icon color | `text-teal-400` | `text-teal-700` |
 | Step number ghost | `text-white/5` | `text-slate-200` |
 | Step title | `text-white` | `text-slate-900` |
 | Step description | `text-slate-400` | `text-slate-600` |
@@ -160,7 +166,8 @@ const categoryColors: Record<string, string> = {
   Performance: "bg-purple-50 text-purple-700",
   Longevity: "bg-rose-50 text-rose-700",
 };
-// fallback: "bg-slate-100 text-slate-600"
+// current fallback: "bg-slate-500/10 text-slate-400"
+// new fallback: "bg-slate-100 text-slate-600"
 ```
 
 **Benefit tags:** `border-white/5 bg-white/5 text-slate-400` → `border-slate-200 bg-slate-50 text-slate-600`
@@ -170,7 +177,8 @@ const categoryColors: Record<string, string> = {
 ### 7. `src/components/WhyRevitalize.tsx`
 
 Same card pattern as above. Notable changes:
-- "Revitalize" highlight: `text-teal-400` → `text-teal-600`
+- "Revitalize" highlight: `text-teal-400` → `text-teal-700`
+- Icon color: `text-teal-400` → `text-teal-700`
 - Reason cards: `border-white/5 bg-navy-900/50` → `border-slate-200 bg-white shadow-sm`
 
 ---
@@ -194,7 +202,7 @@ The contact section transforms into a **teal gradient card** — the visual cent
 | What | Dark | Light |
 |------|------|-------|
 | Section bg | `bg-navy-950` | `bg-cream-50` |
-| Card wrapper | `border-white/10 from-navy-800 to-navy-900` | `border-teal-600/20 from-teal-600 to-teal-700` |
+| Card wrapper | `border-white/10 bg-gradient-to-br from-navy-800 to-navy-900` | `border-teal-700/20 bg-gradient-to-br from-teal-700 to-teal-800` |
 | H2 | `text-white` (keep) | `text-white` (keep — on teal bg) |
 | "Optimize" highlight | `text-teal-400` | `text-teal-100` |
 | Body text | `text-slate-400` | `text-teal-100` |
@@ -218,21 +226,22 @@ Footer **stays dark** — standard pattern for light sites:
 | Inner divider | `border-white/5` | `border-slate-700` |
 | Disclaimer/copyright | `text-slate-600` | `text-slate-400` |
 
-All other footer styles (white logo, slate-400 links) remain unchanged.
+All other footer styles remain unchanged: white logo text, `text-teal-400` logo dot, `text-slate-500` subtitle, `text-slate-400 hover:text-teal-400` nav links.
 
 ---
 
 ## Accessibility (WCAG AA Verification)
 
+> **Note:** `teal-600` (#0d9488) on cream-50 only achieves ~3.6:1 — fails AA for normal text. Use `teal-700` (#0f766e) instead for all accent text on light backgrounds. For the Contact card, the gradient uses `teal-700` to `teal-800` to ensure white text passes AA.
+
 | Combination | Contrast Ratio | Status |
 |-------------|---------------|--------|
-| `slate-900` on `cream-50` | ~16.5:1 | AAA |
-| `slate-600` on `cream-50` | ~6.4:1 | AA |
+| `slate-900` on `cream-50` | ~17.1:1 | AAA |
+| `slate-600` on `cream-50` | ~7.2:1 | AA |
 | `slate-600` on `white` | ~7.0:1 | AA |
-| `teal-600` on `cream-50` | ~4.6:1 | AA |
-| `teal-700` on `cream-50` | ~5.8:1 | AA |
-| `white` on `teal-600` (contact) | ~4.6:1 | AA |
-| `white` on `slate-900` (footer) | ~15.4:1 | AAA |
+| `teal-700` on `cream-50` | ~5.2:1 | AA |
+| `white` on `teal-700` (contact) | ~5.0:1 | AA |
+| `white` on `slate-900` (footer) | ~17.9:1 | AAA |
 
 ---
 
