@@ -15,7 +15,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             <a
               href="#services"
               className="text-sm text-slate-400 transition-colors hover:text-teal-400"
@@ -41,6 +41,21 @@ export default function Footer() {
               Contact
             </a>
           </div>
+        </div>
+
+        <div className="mt-8 flex flex-wrap justify-center gap-6">
+          <a
+            href="/privacy"
+            className="text-sm text-slate-400 transition-colors hover:text-teal-400"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="/terms"
+            className="text-sm text-slate-400 transition-colors hover:text-teal-400"
+          >
+            Terms of Service
+          </a>
         </div>
 
         <div className="mt-8 border-t border-slate-700 pt-8">

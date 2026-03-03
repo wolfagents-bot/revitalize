@@ -29,7 +29,7 @@ const reasons = [
 
 export default function WhyRevitalize() {
   return (
-    <section className="bg-cream-50 py-24">
+    <section id="why" className="bg-cream-50 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
           <div>
