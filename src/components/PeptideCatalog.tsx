@@ -67,7 +67,7 @@ const categoryColors: Record<string, string> = {
 
 export default function PeptideCatalog() {
   return (
-    <section id="peptides" className="bg-cream-100 py-24">
+    <section id="peptides" className="bg-cream-50 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
