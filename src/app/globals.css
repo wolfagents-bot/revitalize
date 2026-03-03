@@ -7,12 +7,17 @@
   --color-teal-500: #14b8a6;
   --color-teal-600: #0d9488;
   --color-teal-700: #0f766e;
-  --color-gold-400: #d4a72d;
-  --color-gold-500: #b8961f;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #14b8a6;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 body {

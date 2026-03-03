@@ -54,7 +54,7 @@ export default function WhyRevitalize() {
             {reasons.map((reason) => (
               <div
                 key={reason.title}
-                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
+                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-teal-500/30 hover:shadow-md"
               >
                 <div className="mb-3 inline-flex rounded-lg bg-teal-50 p-2.5">
                   <reason.icon className="h-5 w-5 text-teal-700" />
