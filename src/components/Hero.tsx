@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-cream-50 pt-20">
+    <section id="hero" className="relative flex min-h-screen items-center overflow-hidden bg-cream-50 pt-20">
       {/* Gradient orbs */}
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-teal-500/5 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-20 right-0 h-[400px] w-[400px] rounded-full bg-teal-400/5 blur-3xl" />
