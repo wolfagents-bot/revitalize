@@ -38,13 +38,13 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-navy-950 py-24">
+    <section id="how-it-works" className="bg-cream-50 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-white md:text-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
             Your Path to Optimization
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-400">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
             A simple, structured process from initial consultation to peak
             performance.
           </p>
@@ -55,21 +55,21 @@ export default function HowItWorks() {
             <div key={step.step} className="relative">
               {/* Connector line */}
               {index < steps.length - 1 && (
-                <div className="absolute right-0 top-12 hidden h-px w-full translate-x-1/2 bg-gradient-to-r from-teal-500/40 to-transparent lg:block" />
+                <div className="absolute right-0 top-12 hidden h-px w-full translate-x-1/2 bg-gradient-to-r from-teal-500/30 to-transparent lg:block" />
               )}
-              <div className="relative rounded-2xl border border-white/5 bg-navy-900/50 p-6">
+              <div className="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                 <div className="mb-4 flex items-center justify-between">
-                  <div className="inline-flex rounded-xl bg-teal-500/10 p-3">
-                    <step.icon className="h-5 w-5 text-teal-400" />
+                  <div className="inline-flex rounded-xl bg-teal-50 p-3">
+                    <step.icon className="h-5 w-5 text-teal-700" />
                   </div>
-                  <span className="text-4xl font-bold text-white/5">
+                  <span className="text-4xl font-bold text-slate-200">
                     {step.step}
                   </span>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-white">
+                <h3 className="mb-2 text-lg font-semibold text-slate-900">
                   {step.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-slate-400">
+                <p className="text-sm leading-relaxed text-slate-600">
                   {step.description}
                 </p>
               </div>

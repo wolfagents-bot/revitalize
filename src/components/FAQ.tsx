@@ -45,13 +45,13 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="bg-navy-900 py-24">
+    <section id="faq" className="bg-cream-100 py-24">
       <div className="mx-auto max-w-3xl px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-white md:text-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
             Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-lg text-slate-400">
+          <p className="mt-4 text-lg text-slate-600">
             Everything you need to know before getting started.
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="rounded-xl border border-white/10 bg-navy-950/50"
+              className="rounded-xl border border-slate-200 bg-white shadow-sm"
             >
               <button
                 onClick={() =>
@@ -68,7 +68,7 @@ export default function FAQ() {
                 }
                 className="flex w-full items-center justify-between p-6 text-left"
               >
-                <span className="pr-4 font-medium text-white">
+                <span className="pr-4 font-medium text-slate-900">
                   {faq.question}
                 </span>
                 <ChevronDown
@@ -79,8 +79,8 @@ export default function FAQ() {
                 />
               </button>
               {openIndex === index && (
-                <div className="border-t border-white/5 px-6 pb-6 pt-4">
-                  <p className="leading-relaxed text-slate-400">{faq.answer}</p>
+                <div className="border-t border-slate-100 px-6 pb-6 pt-4">
+                  <p className="leading-relaxed text-slate-600">{faq.answer}</p>
                 </div>
               )}
             </div>

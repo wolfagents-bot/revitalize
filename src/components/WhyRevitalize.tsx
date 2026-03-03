@@ -29,15 +29,15 @@ const reasons = [
 
 export default function WhyRevitalize() {
   return (
-    <section className="bg-navy-950 py-24">
+    <section className="bg-cream-50 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
           <div>
-            <h2 className="text-3xl font-bold text-white md:text-4xl">
+            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
               Why Choose{" "}
-              <span className="text-teal-400">Revitalize</span>?
+              <span className="text-teal-700">Revitalize</span>?
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-slate-400">
+            <p className="mt-4 text-lg leading-relaxed text-slate-600">
               Most clinics hand you a script and send you on your way. We built
               Revitalize because you deserve better — a physician partner who
               treats your optimization like the serious medical endeavor it is.
@@ -54,15 +54,15 @@ export default function WhyRevitalize() {
             {reasons.map((reason) => (
               <div
                 key={reason.title}
-                className="rounded-xl border border-white/5 bg-navy-900/50 p-6"
+                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
               >
-                <div className="mb-3 inline-flex rounded-lg bg-teal-500/10 p-2.5">
-                  <reason.icon className="h-5 w-5 text-teal-400" />
+                <div className="mb-3 inline-flex rounded-lg bg-teal-50 p-2.5">
+                  <reason.icon className="h-5 w-5 text-teal-700" />
                 </div>
-                <h3 className="mb-2 font-semibold text-white">
+                <h3 className="mb-2 font-semibold text-slate-900">
                   {reason.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-slate-400">
+                <p className="text-sm leading-relaxed text-slate-600">
                   {reason.description}
                 </p>
               </div>
