@@ -3,12 +3,12 @@ import type { ReactNode } from "react";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
-const siteUrl = "https://revitalize.health";
+const siteUrl = "https://revivalize.health";
 
 export const metadata: Metadata = {
   title: {
-    default: "Revitalize | Human Performance Medicine",
-    template: "%s | Revitalize",
+    default: "Revivalize | Human Performance Medicine",
+    template: "%s | Revivalize",
   },
   description:
     "Physician-led peptide therapy, hormone optimization, and advanced bloodwork. Personalized protocols for peak human performance.",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "Revitalize Performance Medicine",
-    title: "Revitalize | Human Performance Medicine",
+    siteName: "Revivalize Performance Medicine",
+    title: "Revivalize | Human Performance Medicine",
     description:
       "Physician-led peptide therapy, hormone optimization, and advanced bloodwork. Personalized protocols for peak human performance.",
     images: [
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Revitalize Performance Medicine",
+        alt: "Revivalize Performance Medicine",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Revitalize | Human Performance Medicine",
+    title: "Revivalize | Human Performance Medicine",
     description:
       "Physician-led peptide therapy, hormone optimization, and advanced bloodwork.",
     images: ["/og-image.jpg"],

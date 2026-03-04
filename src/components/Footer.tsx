@@ -8,7 +8,7 @@ export default function Footer() {
               href="/"
               className="text-xl font-bold tracking-tight text-white"
             >
-              REVITALIZE<span className="text-teal-400">.</span>
+              REVIVALIZE<span className="text-teal-400">.</span>
             </a>
             <p className="mt-1 text-sm text-slate-500">
               Physician-Led Performance Medicine
@@ -67,7 +67,7 @@ export default function Footer() {
             sourced from FDA-registered compounding pharmacies.
           </p>
           <p className="mt-4 text-center text-xs text-slate-400">
-            &copy; {new Date().getFullYear()} Revitalize Performance Medicine.
+            &copy; {new Date().getFullYear()} Revivalize Performance Medicine.
             All rights reserved.
           </p>
         </div>

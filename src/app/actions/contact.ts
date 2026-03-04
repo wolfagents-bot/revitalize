@@ -44,8 +44,8 @@ export async function submitContact(
   // TODO: Replace with real email provider (Resend, SendGrid, etc.)
   // Example with Resend:
   // await resend.emails.send({
-  //   from: "no-reply@revitalize.health",
-  //   to: "hello@revitalize.health",
+  //   from: "no-reply@revivalize.health",
+  //   to: "hello@revivalize.health",
   //   subject: `New consultation request from ${result.data.firstName}`,
   //   html: `...`,
   // });

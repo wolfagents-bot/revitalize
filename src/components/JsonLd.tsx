@@ -2,19 +2,19 @@ export default function JsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "@id": "https://revitalize.health/#business",
-    name: "Revitalize Performance Medicine",
+    "@id": "https://revivalize.health/#business",
+    name: "Revivalize Performance Medicine",
     description:
       "Physician-led peptide therapy, hormone optimization, and advanced bloodwork. Personalized protocols for peak human performance.",
-    url: "https://revitalize.health",
+    url: "https://revivalize.health",
     logo: {
       "@type": "ImageObject",
-      url: "https://revitalize.health/og-image.jpg",
+      url: "https://revivalize.health/og-image.jpg",
       width: 1200,
       height: 630,
     },
     telephone: "(555) 000-0000", // TODO: Replace with real phone
-    email: "hello@revitalize.health", // TODO: Replace with real email
+    email: "hello@revivalize.health", // TODO: Replace with real email
     address: {
       "@type": "PostalAddress",
       addressCountry: "US",

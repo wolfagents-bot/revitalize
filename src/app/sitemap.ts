@@ -3,19 +3,19 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://revitalize.health",
+      url: "https://revivalize.health",
       lastModified: new Date("2025-03-03"),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://revitalize.health/privacy",
+      url: "https://revivalize.health/privacy",
       lastModified: new Date("2025-03-03"),
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
-      url: "https://revitalize.health/terms",
+      url: "https://revivalize.health/terms",
       lastModified: new Date("2025-03-03"),
       changeFrequency: "yearly",
       priority: 0.3,

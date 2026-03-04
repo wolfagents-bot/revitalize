@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://revitalize.health/sitemap.xml",
+    sitemap: "https://revivalize.health/sitemap.xml",
   };
 }

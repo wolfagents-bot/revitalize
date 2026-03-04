@@ -35,11 +35,11 @@ export default function WhyRevitalize() {
           <div>
             <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
               Why Choose{" "}
-              <span className="text-teal-700">Revitalize</span>?
+              <span className="text-teal-700">Revivalize</span>?
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
               Most clinics hand you a script and send you on your way. We built
-              Revitalize because you deserve better — a physician partner who
+              Revivalize because you deserve better — a physician partner who
               treats your optimization like the serious medical endeavor it is.
             </p>
             <a

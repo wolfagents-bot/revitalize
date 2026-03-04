@@ -18,7 +18,7 @@ const testimonials = [
   },
   {
     quote:
-      "What separates Revitalize is the physician-direct model. I talk to my actual doctor, not a patient coordinator. That alone is worth it.",
+      "What separates Revivalize is the physician-direct model. I talk to my actual doctor, not a patient coordinator. That alone is worth it.",
     name: "James R.",
     detail: "Executive, Age 51",
     result: "Hormone + peptide combo protocol",
