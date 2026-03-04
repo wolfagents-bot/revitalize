@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -17,8 +18,15 @@ export default function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="/" className="text-xl font-bold tracking-tight text-slate-900">
-          REVIVALIZE<span className="text-teal-500">.</span>
+        <a href="/" className="block">
+          <Image
+            src="/banner.jpg"
+            alt="Revivalize"
+            width={1179}
+            height={536}
+            className="h-8 w-auto"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}

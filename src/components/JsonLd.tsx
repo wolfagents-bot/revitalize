@@ -9,9 +9,9 @@ export default function JsonLd() {
     url: "https://revivalize.health",
     logo: {
       "@type": "ImageObject",
-      url: "https://revivalize.health/og-image.jpg",
-      width: 1200,
-      height: 630,
+      url: "https://revivalize.health/banner.jpg",
+      width: 1179,
+      height: 536,
     },
     telephone: "(555) 000-0000", // TODO: Replace with real phone
     email: "hello@revivalize.health", // TODO: Replace with real email
