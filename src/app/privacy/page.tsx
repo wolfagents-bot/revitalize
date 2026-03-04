@@ -6,7 +6,7 @@ import LegalSection from "@/components/LegalSection";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Revitalize Performance Medicine collects, uses, and protects your personal health information.",
+    "How Revivalize Performance Medicine collects, uses, and protects your personal health information.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -93,10 +93,10 @@ export default function PrivacyPage() {
                   For privacy concerns, questions about this policy, or to
                   exercise your rights, contact us at{" "}
                   <a
-                    href="mailto:hello@revitalize.health"
+                    href="mailto:hello@revivalize.health"
                     className="text-teal-700 hover:underline"
                   >
-                    hello@revitalize.health
+                    hello@revivalize.health
                   </a>
                   .
                 </p>
@@ -105,7 +105,7 @@ export default function PrivacyPage() {
 
             <div className="mt-10 border-t border-slate-200 pt-6">
               <a href="/" className="text-sm text-teal-700 hover:underline">
-                &larr; Back to Revitalize
+                &larr; Back to Revivalize
               </a>
             </div>
           </div>

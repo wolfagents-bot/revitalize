@@ -6,7 +6,7 @@ import LegalSection from "@/components/LegalSection";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms of service and medical disclaimers for Revitalize Performance Medicine.",
+    "Terms of service and medical disclaimers for Revivalize Performance Medicine.",
   alternates: { canonical: "/terms" },
 };
 
@@ -87,7 +87,7 @@ export default function TermsPage() {
 
               <LegalSection title="7. Limitation of Liability">
                 <p>
-                  Revitalize Performance Medicine shall not be liable for any
+                  Revivalize Performance Medicine shall not be liable for any
                   indirect, incidental, special, or consequential damages
                   arising from your use of this website or reliance on any
                   information provided herein. Your use of this website is at
@@ -108,10 +108,10 @@ export default function TermsPage() {
                 <p>
                   For questions about these terms, contact us at{" "}
                   <a
-                    href="mailto:hello@revitalize.health"
+                    href="mailto:hello@revivalize.health"
                     className="text-teal-700 hover:underline"
                   >
-                    hello@revitalize.health
+                    hello@revivalize.health
                   </a>
                   .
                 </p>
@@ -120,7 +120,7 @@ export default function TermsPage() {
 
             <div className="mt-10 border-t border-slate-200 pt-6">
               <a href="/" className="text-sm text-teal-700 hover:underline">
-                &larr; Back to Revitalize
+                &larr; Back to Revivalize
               </a>
             </div>
           </div>
