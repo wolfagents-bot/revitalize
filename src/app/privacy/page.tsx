@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "How Revitalize Performance Medicine collects, uses, and protects your personal health information.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

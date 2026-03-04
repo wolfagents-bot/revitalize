@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
@@ -12,9 +13,7 @@ export const metadata: Metadata = {
   description:
     "Physician-led peptide therapy, hormone optimization, and advanced bloodwork. Personalized protocols for peak human performance.",
   metadataBase: new URL(siteUrl),
-  alternates: {
-    canonical: "/",
-  },
+  alternates: {},
   robots: {
     index: true,
     follow: true,
@@ -63,7 +62,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en">

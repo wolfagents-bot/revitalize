@@ -30,6 +30,7 @@ export default function MobileCTA() {
     >
       <a
         href="#contact"
+        tabIndex={visible ? 0 : -1}
         className="block w-full rounded-lg bg-teal-500 py-4 text-center text-sm font-semibold text-white transition-colors hover:bg-teal-600"
       >
         Book Free Consultation

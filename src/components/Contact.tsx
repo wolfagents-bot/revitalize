@@ -152,13 +152,17 @@ export default function Contact() {
                     error={state.errors?.phone}
                   />
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium text-teal-100">
+                    <label
+                      htmlFor="message"
+                      className="mb-1.5 block text-sm font-medium text-teal-100"
+                    >
                       Note{" "}
                       <span className="font-normal text-teal-200/60">
                         (optional)
                       </span>
                     </label>
                     <textarea
+                      id="message"
                       name="message"
                       rows={3}
                       maxLength={500}

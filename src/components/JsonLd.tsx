@@ -7,7 +7,12 @@ export default function JsonLd() {
     description:
       "Physician-led peptide therapy, hormone optimization, and advanced bloodwork. Personalized protocols for peak human performance.",
     url: "https://revitalize.health",
-    logo: "https://revitalize.health/og-image.jpg",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://revitalize.health/og-image.jpg",
+      width: 1200,
+      height: 630,
+    },
     telephone: "(555) 000-0000", // TODO: Replace with real phone
     email: "hello@revitalize.health", // TODO: Replace with real email
     address: {
@@ -64,7 +69,9 @@ export default function JsonLd() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+      }}
     />
   );
 }

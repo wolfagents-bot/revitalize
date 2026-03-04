@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
             <a
-              href="#"
+              href="/"
               className="text-xl font-bold tracking-tight text-white"
             >
               REVITALIZE<span className="text-teal-400">.</span>
