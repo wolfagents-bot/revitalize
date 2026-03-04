@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "Terms of service and medical disclaimers for Revitalize Performance Medicine.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

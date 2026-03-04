@@ -47,7 +47,7 @@ export default function OurTeam() {
                       className="h-full w-full object-cover"
                     />
                   ) : (
-                    <Stethoscope className="h-16 w-16 text-teal-300" />
+                    <Stethoscope aria-hidden="true" className="h-16 w-16 text-teal-300" />
                   )}
                 </div>
 

@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#" className="text-xl font-bold tracking-tight text-slate-900">
+        <a href="/" className="text-xl font-bold tracking-tight text-slate-900">
           REVITALIZE<span className="text-teal-500">.</span>
         </a>
 

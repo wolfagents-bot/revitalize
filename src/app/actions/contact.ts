@@ -49,7 +49,8 @@ export async function submitContact(
   //   subject: `New consultation request from ${result.data.firstName}`,
   //   html: `...`,
   // });
-  console.log("[Contact form submission]", result.data);
+  // TODO: Replace with real email provider (Resend, SendGrid, etc.)
+  console.log("[Contact form submission]", new Date().toISOString());
 
   return { status: "success" };
 }
