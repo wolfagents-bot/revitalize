@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream-50: #FAFAF7;
-  --color-cream-100: #F5F3EE;
+  --color-cream-50: #F0EDE6;
+  --color-cream-100: #E8E4DB;
   --color-teal-400: #2A8A96;
   --color-teal-500: #1F7A85;
   --color-teal-600: #1B6B75;
@@ -26,7 +26,7 @@ button:focus-visible {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
-  background-color: #FAFAF7;
+  background-color: #F0EDE6;
   color: #334155;
 }
 
