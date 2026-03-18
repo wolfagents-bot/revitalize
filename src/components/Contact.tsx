@@ -94,6 +94,13 @@ export default function Contact() {
                   <span>Virtual & In-Person Available</span>
                 </div>
               </div>
+
+              <a
+                href="/intake"
+                className="mt-6 inline-block text-sm text-teal-200 underline transition-colors hover:text-white"
+              >
+                New patient? Complete your intake form →
+              </a>
             </div>
 
             {/* Right - Form */}

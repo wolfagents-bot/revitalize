@@ -7,7 +7,7 @@ import { submitIntake, type IntakeFormState } from "@/app/actions/intake";
 // Types
 // ---------------------------------------------------------------------------
 
-interface FormData {
+interface IntakeFields {
   // Step 1
   firstName: string;
   lastName: string;
@@ -127,8 +127,8 @@ function Step1({
   onChange,
   errors,
 }: {
-  data: FormData;
-  onChange: (field: keyof FormData, value: string) => void;
+  data: IntakeFields;
+  onChange: (field: keyof IntakeFields, value: string) => void;
   errors: Record<string, string>;
 }) {
   return (
@@ -289,7 +289,7 @@ function Step1({
             onChange={(e) => onChange("gender", e.target.value)}
             className={selectClass}
           >
-            <option value="">Prefer not to say</option>
+            <option value="">Select…</option>
             <option value="female">Female</option>
             <option value="male">Male</option>
             <option value="prefer_not_to_say">Prefer not to say</option>
@@ -305,8 +305,8 @@ function Step2({
   onChange,
   errors,
 }: {
-  data: FormData;
-  onChange: (field: keyof FormData, value: string) => void;
+  data: IntakeFields;
+  onChange: (field: keyof IntakeFields, value: string) => void;
   errors: Record<string, string>;
 }) {
   return (
@@ -411,8 +411,8 @@ function Step3({
   onMedicationToggle,
   errors,
 }: {
-  data: FormData;
-  onChange: (field: keyof FormData, value: string) => void;
+  data: IntakeFields;
+  onChange: (field: keyof IntakeFields, value: string) => void;
   onMedicationToggle: (med: string) => void;
   errors: Record<string, string>;
 }) {
@@ -509,8 +509,8 @@ function Step4({
   onChange,
   errors,
 }: {
-  data: FormData;
-  onChange: (field: keyof FormData, value: string) => void;
+  data: IntakeFields;
+  onChange: (field: keyof IntakeFields, value: string) => void;
   errors: Record<string, string>;
 }) {
   const showNote =
@@ -608,8 +608,8 @@ function Step5({
   onChange,
   errors,
 }: {
-  data: FormData;
-  onChange: (field: keyof FormData, value: string) => void;
+  data: IntakeFields;
+  onChange: (field: keyof IntakeFields, value: string) => void;
   errors: Record<string, string>;
 }) {
   const labOptions = [
@@ -681,8 +681,8 @@ function Step6({
   onChange,
   errors,
 }: {
-  data: FormData;
-  onChange: (field: keyof FormData, value: string | boolean) => void;
+  data: IntakeFields;
+  onChange: (field: keyof IntakeFields, value: string | boolean) => void;
   errors: Record<string, string>;
 }) {
   return (
@@ -884,7 +884,7 @@ function SuccessState() {
 // Main form component
 // ---------------------------------------------------------------------------
 
-const initialFormData: FormData = {
+const initialFormData: IntakeFields = {
   firstName: "",
   lastName: "",
   email: "",
@@ -914,7 +914,7 @@ const initialActionState: IntakeFormState = { status: "idle" };
 
 export default function IntakeForm() {
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState<FormData>(initialFormData);
+  const [formData, setFormData] = useState<IntakeFields>(initialFormData);
   const [clientErrors, setClientErrors] = useState<Record<string, string>>({});
 
   const [actionState, formAction, isPending] = useActionState(
@@ -928,7 +928,7 @@ export default function IntakeForm() {
   }
   const errors = { ...serverErrors, ...clientErrors };
 
-  function handleChange(field: keyof FormData, value: string | boolean) {
+  function handleChange(field: keyof IntakeFields, value: string | boolean) {
     setFormData((prev) => ({ ...prev, [field]: value }));
     setClientErrors((prev) => {
       const next = { ...prev };
