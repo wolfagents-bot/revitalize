@@ -29,7 +29,7 @@ export default function MobileCTA() {
       style={{ paddingBottom: "max(1rem, env(safe-area-inset-bottom))" }}
     >
       <a
-        href="#contact"
+        href="/#contact"
         tabIndex={visible ? 0 : -1}
         className="block w-full rounded-lg bg-teal-500 py-4 text-center text-sm font-semibold text-white transition-colors hover:bg-teal-600"
       >

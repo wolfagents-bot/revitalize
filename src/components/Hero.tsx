@@ -27,7 +27,7 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="#contact"
+            href="/#contact"
             className="group inline-flex items-center gap-2 rounded-lg bg-teal-500 px-8 py-4 text-lg font-semibold text-white transition-all hover:bg-teal-600 hover:shadow-lg hover:shadow-teal-500/25"
           >
             Start Your Journey
@@ -37,7 +37,7 @@ export default function Hero() {
             />
           </a>
           <a
-            href="#services"
+            href="/#services"
             className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-8 py-4 text-lg font-medium text-slate-600 transition-colors hover:border-teal-500 hover:text-teal-700"
           >
             Explore Services

@@ -43,7 +43,7 @@ export default function WhyRevitalize() {
               treat your optimization like the serious medical endeavor it is.
             </p>
             <a
-              href="#contact"
+              href="/#contact"
               className="mt-8 inline-flex rounded-lg bg-teal-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal-600"
             >
               Schedule Your Free Consultation

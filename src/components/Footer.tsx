@@ -17,25 +17,25 @@ export default function Footer() {
 
           <div className="flex flex-wrap justify-center gap-8">
             <a
-              href="#services"
+              href="/#services"
               className="text-sm text-slate-400 transition-colors hover:text-teal-400"
             >
               Services
             </a>
             <a
-              href="#peptides"
+              href="/#peptides"
               className="text-sm text-slate-400 transition-colors hover:text-teal-400"
             >
               Peptides
             </a>
             <a
-              href="#faq"
+              href="/#faq"
               className="text-sm text-slate-400 transition-colors hover:text-teal-400"
             >
               FAQ
             </a>
             <a
-              href="#contact"
+              href="/#contact"
               className="text-sm text-slate-400 transition-colors hover:text-teal-400"
             >
               Contact
