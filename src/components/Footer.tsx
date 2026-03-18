@@ -8,7 +8,7 @@ export default function Footer() {
               href="/"
               className="text-xl font-bold tracking-tight text-white"
             >
-              REVIVALIZE<span className="text-teal-400">.</span>
+              REVIVALIZE<span className="text-gold-500">.</span>
             </a>
             <p className="mt-1 text-sm text-slate-500">
               Physician-Led Performance Medicine
@@ -39,6 +39,12 @@ export default function Footer() {
               className="text-sm text-slate-400 transition-colors hover:text-teal-400"
             >
               Contact
+            </a>
+            <a
+              href="/intake"
+              className="text-sm text-slate-400 transition-colors hover:text-teal-400"
+            >
+              Patient Intake
             </a>
           </div>
         </div>

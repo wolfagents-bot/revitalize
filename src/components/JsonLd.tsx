@@ -5,7 +5,7 @@ export default function JsonLd() {
     "@id": "https://revivalize.health/#business",
     name: "Revivalize Performance Medicine",
     description:
-      "Physician-led peptide therapy, hormone optimization, and advanced bloodwork. Personalized protocols for peak human performance.",
+      "Physician-led peptide therapy, exosome therapy, and advanced bloodwork. Personalized protocols for peak human performance.",
     url: "https://revivalize.health",
     logo: {
       "@type": "ImageObject",
@@ -13,8 +13,7 @@ export default function JsonLd() {
       width: 1179,
       height: 536,
     },
-    telephone: "(555) 000-0000", // TODO: Replace with real phone
-    email: "hello@revivalize.health", // TODO: Replace with real email
+    email: "Info@RevivalizeMD.com",
     address: {
       "@type": "PostalAddress",
       addressCountry: "US",
@@ -33,15 +32,15 @@ export default function JsonLd() {
       },
       {
         "@type": "MedicalProcedure",
-        name: "Hormone Optimization",
+        name: "Exosome Therapy",
         description:
-          "Evidence-based hormone replacement and optimization with comprehensive lab monitoring.",
+          "Cell-derived signaling therapy to accelerate healing, reduce inflammation, and support whole-body regeneration.",
       },
       {
         "@type": "MedicalProcedure",
         name: "Advanced Bloodwork",
         description:
-          "Comprehensive 80+ biomarker panels for personalized health optimization.",
+          "Comprehensive 30+ biomarker panels for personalized health optimization.",
       },
     ],
     hasOfferCatalog: {

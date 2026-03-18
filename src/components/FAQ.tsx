@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "How long before I see results?",
     answer:
-      "It depends on the protocol. Some peptides like BPC-157 can show noticeable effects within 1-2 weeks. Growth hormone peptides typically show body composition changes in 8-12 weeks. Metabolic peptides like Semaglutide often show results within the first month. We set clear expectations during your consultation.",
+      "It depends on the protocol. Some peptides like BPC-157 can show noticeable effects within 1-2 weeks. Growth hormone peptides typically show body composition changes in 8-12 weeks. Metabolic peptides often show results within the first month. We set clear expectations during your consultation.",
   },
   {
     question: "Do you offer telemedicine / virtual consultations?",
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "What does the bloodwork panel include?",
     answer:
-      "Our comprehensive panel covers 80+ biomarkers including complete hormone panels (testosterone, estrogen, thyroid, cortisol, DHEA), metabolic markers (insulin, glucose, HbA1c, lipids), inflammatory markers (CRP, homocysteine), liver and kidney function, and vitamin/mineral status. Far more comprehensive than what most doctors order.",
+      "Our comprehensive panel covers 30+ biomarkers including metabolic markers (insulin, glucose, HbA1c, lipids), thyroid and cortisol panels, inflammatory markers (CRP, homocysteine), liver and kidney function, and vitamin/mineral status. Far more comprehensive than what most doctors order.",
   },
   {
     question: "How much does it cost?",

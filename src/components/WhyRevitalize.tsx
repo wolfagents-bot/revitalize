@@ -5,13 +5,13 @@ const reasons = [
     icon: Shield,
     title: "Physician-Led",
     description:
-      "Every protocol is designed, supervised, and adjusted by a licensed physician. Not a nurse practitioner. Not a health coach. A doctor.",
+      "Every protocol is designed, supervised, and adjusted by a licensed physician.",
   },
   {
     icon: Microscope,
     title: "Data-Driven",
     description:
-      "We don't guess. 80+ biomarker panels, quarterly monitoring, and objective tracking ensure your protocol is working — or we change it.",
+      "We don't guess. 30+ biomarker panels, quarterly monitoring, and objective tracking ensure your protocol is working — or we change it.",
   },
   {
     icon: UserCheck,
@@ -39,8 +39,8 @@ export default function WhyRevitalize() {
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
               Most clinics hand you a script and send you on your way. We built
-              Revivalize because you deserve better — a physician partner who
-              treats your optimization like the serious medical endeavor it is.
+              Revivalize because you deserve better — medical professionals who
+              treat your optimization like the serious medical endeavor it is.
             </p>
             <a
               href="#contact"

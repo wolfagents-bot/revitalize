@@ -45,7 +45,7 @@ export async function submitContact(
   // Example with Resend:
   // await resend.emails.send({
   //   from: "no-reply@revivalize.health",
-  //   to: "hello@revivalize.health",
+  //   to: "Info@RevivalizeMD.com",
   //   subject: `New consultation request from ${result.data.firstName}`,
   //   html: `...`,
   // });

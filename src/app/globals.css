@@ -3,10 +3,13 @@
 @theme {
   --color-cream-50: #FAFAF7;
   --color-cream-100: #F5F3EE;
-  --color-teal-400: #2dd4bf;
-  --color-teal-500: #14b8a6;
-  --color-teal-600: #0d9488;
-  --color-teal-700: #0f766e;
+  --color-teal-400: #2A8A96;
+  --color-teal-500: #1F7A85;
+  --color-teal-600: #1B6B75;
+  --color-teal-700: #1B5E6B;
+  --color-gold-400: #D4B85C;
+  --color-gold-500: #C8A951;
+  --color-gold-600: #B89840;
 }
 
 html {
@@ -15,7 +18,7 @@ html {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #14b8a6;
+  outline: 2px solid #1F7A85;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -25,4 +28,8 @@ body {
     sans-serif;
   background-color: #FAFAF7;
   color: #334155;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair), Georgia, serif;
 }
