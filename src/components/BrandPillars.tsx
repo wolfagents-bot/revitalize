@@ -6,35 +6,30 @@ const pillars = [
     icon: Dna,
     gradient: "from-teal-400 to-emerald-500",
     iconColor: "text-white/90",
-    bgAccent: "bg-teal-500/10",
   },
   {
     label: "Repair",
     icon: Atom,
     gradient: "from-sky-400 to-teal-500",
     iconColor: "text-white/90",
-    bgAccent: "bg-sky-500/10",
   },
   {
     label: "Revive",
     icon: Heart,
     gradient: "from-amber-400 to-teal-500",
     iconColor: "text-white/90",
-    bgAccent: "bg-amber-500/10",
   },
   {
     label: "Renew",
     icon: RotateCw,
     gradient: "from-teal-400 to-cyan-400",
     iconColor: "text-white/90",
-    bgAccent: "bg-cyan-500/10",
   },
   {
     label: "Rebalance",
     icon: Waves,
     gradient: "from-sky-400 to-indigo-500",
     iconColor: "text-white/90",
-    bgAccent: "bg-indigo-500/10",
   },
 ] as const;
 

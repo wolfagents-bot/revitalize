@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute -bottom-20 right-0 h-[400px] w-[400px] rounded-full bg-teal-400/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-24 text-center lg:py-32">
-        <div className="mb-6 inline-flex items-center rounded-full border border-teal-500/30 bg-teal-500/10 px-4 py-1.5 text-sm font-medium text-teal-700">
+        <div className="mb-6 inline-flex items-center rounded-full border border-gold-500/30 bg-teal-500/10 px-4 py-1.5 text-sm font-medium text-teal-700">
           Physician-Led Performance Medicine
         </div>
 
