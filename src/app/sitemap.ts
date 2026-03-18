@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://revivalize.health/intake",
+      lastModified: new Date("2026-03-18"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: "https://revivalize.health/privacy",
       lastModified: new Date("2025-03-03"),
       changeFrequency: "yearly",

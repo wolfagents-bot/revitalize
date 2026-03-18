@@ -1,4 +1,4 @@
-import { Syringe, Activity, TestTubeDiagonal } from "lucide-react";
+import { Syringe, Sparkles, TestTubeDiagonal } from "lucide-react";
 
 const services = [
   {
@@ -9,29 +9,29 @@ const services = [
     features: [
       "BPC-157 & TB-500 for recovery",
       "CJC-1295 / Ipamorelin for GH optimization",
-      "Semaglutide & Tirzepatide for metabolic health",
+      "Metabolic reset peptides",
       "Custom stacking protocols",
     ],
   },
   {
-    icon: Activity,
-    title: "Hormone Optimization",
+    icon: Sparkles,
+    title: "Exosome Therapy",
     description:
-      "Evidence-based hormone replacement and optimization. We don't guess — we measure, titrate, and monitor.",
+      "Harness the power of cell-derived signaling to accelerate healing, reduce inflammation, and support whole-body regeneration.",
     features: [
-      "Testosterone replacement therapy",
-      "Thyroid optimization",
-      "Estrogen & progesterone balancing",
-      "DHEA & pregnenolone protocols",
+      "Tissue regeneration & repair",
+      "Anti-inflammatory support",
+      "Joint & musculoskeletal restoration",
+      "Skin rejuvenation & anti-aging",
     ],
   },
   {
     icon: TestTubeDiagonal,
     title: "Advanced Bloodwork",
     description:
-      "Comprehensive panels that go far beyond standard labs. We track 80+ biomarkers to build a complete picture of your health.",
+      "Comprehensive panels that go far beyond standard labs. We track 30+ biomarkers to build a complete picture of your health.",
     features: [
-      "Full hormone panels",
+      "Comprehensive metabolic panels",
       "Metabolic & lipid deep-dive",
       "Inflammatory markers",
       "Quarterly monitoring & trending",

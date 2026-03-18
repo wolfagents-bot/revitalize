@@ -10,6 +10,7 @@ const navLinks = [
   { href: "#peptides", label: "Peptides" },
   { href: "#why", label: "Why Us" },
   { href: "#faq", label: "FAQ" },
+  { href: "/intake", label: "Patient Intake" },
 ];
 
 export default function Header() {

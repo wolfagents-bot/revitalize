@@ -18,14 +18,14 @@ const steps = [
     step: "02",
     title: "Comprehensive Labs",
     description:
-      "We order an 80+ biomarker panel to get a complete picture. No guessing — every decision is data-driven.",
+      "We order a 30+ biomarker panel to get a complete picture. No guessing — every decision is data-driven.",
   },
   {
     icon: ClipboardList,
     step: "03",
     title: "Custom Protocol",
     description:
-      "Your physician builds a personalized protocol based on your labs, goals, and lifestyle. Peptides, hormones, supplements — all calibrated to you.",
+      "Your physician builds a personalized protocol based on your labs, goals, and lifestyle. Peptides, exosomes, supplements — all calibrated to you.",
   },
   {
     icon: TrendingUp,

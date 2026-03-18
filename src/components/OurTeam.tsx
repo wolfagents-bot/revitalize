@@ -1,18 +1,12 @@
-import { Award, GraduationCap, Stethoscope } from "lucide-react";
+import { Stethoscope } from "lucide-react";
 
 // TODO: Replace with real physician data before launch
 const physicians = [
   {
     name: "Dr. [First] [Last], MD",
-    title: "Founder & Medical Director",
+    title: "Board Certified Medical Director",
     photo: null as string | null, // Replace with: "/team/dr-last.jpg"
-    credentials: [
-      "Board Certified — Internal Medicine",
-      "Fellowship: Sports & Performance Medicine",
-      "Member, American Academy of Anti-Aging Medicine (A4M)",
-    ],
-    yearsExperience: 15,
-    bio: "With over 15 years of clinical experience, our medical director combines evidence-based medicine with a deep understanding of human performance optimization. Every protocol is personally designed and monitored — because your health deserves physician-level attention, not a cookie-cutter approach.",
+    bio: "Our Board Certified medical director combines evidence-based medicine with a deep understanding of human performance optimization. Every protocol is personally designed and monitored — because your health deserves physician-level attention, not a cookie-cutter approach.",
   },
 ];
 
@@ -22,12 +16,11 @@ export default function OurTeam() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-            Meet Your <span className="text-teal-700">Physician</span>
+            Meet Your <span className="text-teal-700">Medical Director</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Board-certified, fellowship-trained, and obsessed with optimization.
-            You&apos;ll work directly with your doctor — not a health coach or
-            PA.
+            Our Board Certified medical director leads every protocol with
+            precision and care.
           </p>
         </div>
 
@@ -62,22 +55,6 @@ export default function OurTeam() {
                   <p className="mt-4 leading-relaxed text-slate-600">
                     {physician.bio}
                   </p>
-
-                  {/* Credentials */}
-                  <div className="mt-6 space-y-2">
-                    {physician.credentials.map((cred) => (
-                      <div key={cred} className="flex items-start gap-2">
-                        <Award className="mt-0.5 h-4 w-4 flex-shrink-0 text-teal-700" />
-                        <span className="text-sm text-slate-600">{cred}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Years badge */}
-                  <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-teal-500/30 bg-teal-500/10 px-4 py-1.5 text-sm font-medium text-teal-700">
-                    <GraduationCap className="h-4 w-4" />
-                    {physician.yearsExperience}+ Years of Clinical Experience
-                  </div>
                 </div>
               </div>
             </div>

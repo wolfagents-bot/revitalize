@@ -93,10 +93,10 @@ export default function PrivacyPage() {
                   For privacy concerns, questions about this policy, or to
                   exercise your rights, contact us at{" "}
                   <a
-                    href="mailto:hello@revivalize.health"
+                    href="mailto:Info@RevivalizeMD.com"
                     className="text-teal-700 hover:underline"
                   >
-                    hello@revivalize.health
+                    Info@RevivalizeMD.com
                   </a>
                   .
                 </p>

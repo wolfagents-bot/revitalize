@@ -1,58 +1,110 @@
-const peptides = [
+function DnaIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M2 15c6.667-6 13.333 0 20-6" />
+      <path d="M9 3.236s1 2.764 3 2.764 3-2.764 3-2.764" />
+      <path d="M12 12c2 0 3-2.764 3-2.764" />
+      <path d="M9 12c-2 0-3 2.764-3 2.764" />
+      <path d="M12 12c-2 0-3 2.764-3 2.764" />
+      <path d="M9 20.764s1-2.764 3-2.764 3 2.764 3 2.764" />
+      <path d="M2 9c6.667 6 13.333 0 20 6" />
+    </svg>
+  );
+}
+
+type Peptide = {
+  name: string;
+  category: string;
+  description: string;
+  highlights: string[];
+  benefits: string[];
+};
+
+const peptides: Peptide[] = [
   {
     name: "BPC-157",
     category: "Recovery",
-    description:
-      "Body Protection Compound. Accelerates tissue repair, supports gut healing, and promotes recovery from injuries and inflammation.",
+    description: "Body Protection Compound",
+    highlights: [
+      "Accelerates tissue repair and wound healing",
+      "Supports gut healing and digestive health",
+      "Promotes recovery from injuries and inflammation",
+    ],
     benefits: ["Tissue repair", "Gut health", "Joint recovery"],
   },
   {
     name: "TB-500",
     category: "Recovery",
-    description:
-      "Thymosin Beta-4. Promotes cellular migration and wound healing. Often paired with BPC-157 for comprehensive recovery protocols.",
+    description: "Thymosin Beta-4",
+    highlights: [
+      "Promotes cellular migration and wound healing",
+      "Enhances flexibility and reduces stiffness",
+      "Often paired with BPC-157 for comprehensive recovery",
+    ],
     benefits: ["Wound healing", "Flexibility", "Inflammation reduction"],
   },
   {
     name: "CJC-1295 / Ipamorelin",
     category: "Growth Hormone",
-    description:
-      "The gold standard GH secretagogue stack. Stimulates natural growth hormone release for body composition, recovery, and anti-aging.",
+    description: "Gold standard GH secretagogue stack",
+    highlights: [
+      "Stimulates natural growth hormone release",
+      "Supports body composition and fat loss",
+      "Promotes deeper, more restorative sleep",
+    ],
     benefits: ["Lean muscle", "Fat loss", "Deep sleep"],
   },
   {
-    name: "Semaglutide",
+    name: "Metabolic Reset",
     category: "Metabolic",
-    description:
-      "GLP-1 receptor agonist for sustainable weight management. Reduces appetite, improves insulin sensitivity, and supports metabolic health.",
-    benefits: ["Weight management", "Blood sugar", "Appetite control"],
-  },
-  {
-    name: "Tirzepatide",
-    category: "Metabolic",
-    description:
-      "Dual GIP/GLP-1 agonist offering superior metabolic outcomes. Next-generation peptide for weight optimization and glucose control.",
-    benefits: ["Enhanced fat loss", "Glucose control", "Metabolic reset"],
+    description: "Next-generation metabolic optimization",
+    highlights: [
+      "Supports sustainable weight management",
+      "Regulates appetite and satiety signals",
+      "Improves body composition under physician supervision",
+    ],
+    benefits: ["Weight management", "Appetite regulation", "Body composition"],
   },
   {
     name: "PT-141",
     category: "Performance",
-    description:
-      "Bremelanotide for sexual health optimization. Works centrally on the nervous system to enhance arousal and performance in both men and women.",
+    description: "Bremelanotide for sexual health optimization",
+    highlights: [
+      "Works centrally on the nervous system",
+      "Enhances arousal and performance",
+      "Effective for both men and women",
+    ],
     benefits: ["Libido enhancement", "Sexual performance", "Neural pathway"],
   },
   {
     name: "Sermorelin",
     category: "Growth Hormone",
-    description:
-      "GHRH analog that stimulates your pituitary to produce more growth hormone naturally. Ideal for anti-aging and recovery protocols.",
+    description: "GHRH analog for natural GH production",
+    highlights: [
+      "Stimulates your pituitary to produce more growth hormone",
+      "Ideal for anti-aging and recovery protocols",
+      "Supports energy and vitality",
+    ],
     benefits: ["Anti-aging", "Recovery", "Energy"],
   },
   {
     name: "NAD+",
     category: "Longevity",
-    description:
-      "Nicotinamide adenine dinucleotide for cellular energy and repair. Supports mitochondrial function, DNA repair, and cognitive clarity.",
+    description: "Nicotinamide adenine dinucleotide",
+    highlights: [
+      "Supports mitochondrial function and cellular energy",
+      "Promotes DNA repair and cellular resilience",
+      "Enhances cognitive clarity and focus",
+    ],
     benefits: ["Cellular repair", "Mental clarity", "Energy"],
   },
 ];
@@ -95,9 +147,20 @@ export default function PeptideCatalog() {
                   {peptide.category}
                 </span>
               </div>
-              <p className="mb-4 flex-1 text-sm leading-relaxed text-slate-600">
+              <p className="mb-3 text-sm font-medium text-slate-700">
                 {peptide.description}
               </p>
+              <ul className="mb-4 flex-1 space-y-2">
+                {peptide.highlights.map((highlight) => (
+                  <li
+                    key={highlight}
+                    className="flex items-start gap-2 text-sm leading-relaxed text-slate-600"
+                  >
+                    <DnaIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-teal-600" />
+                    {highlight}
+                  </li>
+                ))}
+              </ul>
               <div className="flex flex-wrap gap-2">
                 {peptide.benefits.map((benefit) => (
                   <span

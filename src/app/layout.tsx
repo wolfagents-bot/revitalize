@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { Playfair_Display } from "next/font/google";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 const siteUrl = "https://revivalize.health";
 
@@ -11,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Revivalize",
   },
   description:
-    "Physician-led peptide therapy, hormone optimization, and advanced bloodwork. Personalized protocols for peak human performance.",
+    "Physician-led peptide therapy, exosome therapy, and advanced bloodwork. Personalized protocols for peak human performance.",
   metadataBase: new URL(siteUrl),
   alternates: {},
   robots: {
@@ -32,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Revivalize Performance Medicine",
     title: "Revivalize | Human Performance Medicine",
     description:
-      "Physician-led peptide therapy, hormone optimization, and advanced bloodwork. Personalized protocols for peak human performance.",
+      "Physician-led peptide therapy, exosome therapy, and advanced bloodwork. Personalized protocols for peak human performance.",
     images: [
       {
         url: "/og-image.jpg",
@@ -46,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Revivalize | Human Performance Medicine",
     description:
-      "Physician-led peptide therapy, hormone optimization, and advanced bloodwork.",
+      "Physician-led peptide therapy, exosome therapy, and advanced bloodwork.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -65,7 +72,7 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={playfair.variable}>
       <head>
         <JsonLd />
       </head>

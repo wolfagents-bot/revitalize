@@ -20,7 +20,7 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 md:text-xl">
-          Advanced peptide therapy, hormone optimization, and comprehensive
+          Advanced peptide therapy, exosome therapy, and comprehensive
           bloodwork — all personalized to your unique biochemistry by a licensed
           physician.
         </p>
