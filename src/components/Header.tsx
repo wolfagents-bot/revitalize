@@ -5,11 +5,11 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#peptides", label: "Peptides" },
-  { href: "#why", label: "Why Us" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#services", label: "Services" },
+  { href: "/#how-it-works", label: "How It Works" },
+  { href: "/#peptides", label: "Peptides" },
+  { href: "/#why", label: "Why Us" },
+  { href: "/#faq", label: "FAQ" },
   { href: "/intake", label: "Patient Intake" },
 ];
 
@@ -42,7 +42,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             className="rounded-lg bg-teal-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-teal-600"
           >
             Book Consultation
@@ -73,7 +73,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setMobileOpen(false)}
             className="mt-2 block rounded-lg bg-teal-500 px-5 py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-teal-600"
           >
