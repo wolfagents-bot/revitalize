@@ -3,9 +3,9 @@ import { Stethoscope } from "lucide-react";
 // TODO: Replace with real physician data before launch
 const physicians = [
   {
-    name: "Dr. [First] [Last], MD",
+    name: "Dr. Ladynez Espinal, MD",
     title: "Board Certified Medical Director",
-    photo: null as string | null, // Replace with: "/team/dr-last.jpg"
+    photo: "/team/dr-headshot.jpg",
     bio: "Our Board Certified medical director combines evidence-based medicine with a deep understanding of human performance optimization. Every protocol is personally designed and monitored — because your health deserves physician-level attention, not a cookie-cutter approach.",
   },
 ];

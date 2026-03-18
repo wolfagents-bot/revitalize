@@ -3,7 +3,6 @@
 import { useActionState } from "react";
 import {
   Mail,
-  MapPin,
   Loader2,
   CheckCircle,
   AlertCircle,
@@ -88,10 +87,6 @@ export default function Contact() {
                 <div className="flex items-center gap-3 text-teal-100">
                   <Mail className="h-5 w-5 text-white" />
                   <span>Info@RevivalizeMD.com</span>
-                </div>
-                <div className="flex items-center gap-3 text-teal-100">
-                  <MapPin className="h-5 w-5 text-white" />
-                  <span>Virtual & In-Person Available</span>
                 </div>
               </div>
 
