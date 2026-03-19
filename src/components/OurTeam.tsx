@@ -1,6 +1,5 @@
-import { Stethoscope } from "lucide-react";
+import Image from "next/image";
 
-// TODO: Replace with real physician data before launch
 const physicians = [
   {
     name: "Dr. Ladynez Espinal, MD",
@@ -31,20 +30,17 @@ export default function OurTeam() {
               className="w-full max-w-3xl rounded-2xl border border-slate-200 bg-white p-10 shadow-sm"
             >
               <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
-                {/* Photo placeholder */}
-                <div className="flex h-48 w-48 flex-shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-teal-50">
-                  {physician.photo ? (
-                    <img
-                      src={physician.photo}
-                      alt={`Photo of ${physician.name}`}
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <Stethoscope aria-hidden="true" className="h-16 w-16 text-teal-300" />
-                  )}
+                <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-2xl border border-slate-200">
+                  <Image
+                    src={physician.photo}
+                    alt={`Dr. Ladynez Espinal, Board Certified Medical Director`}
+                    fill
+                    sizes="192px"
+                    className="object-cover"
+                    priority
+                  />
                 </div>
 
-                {/* Info */}
                 <div className="flex-1 text-center md:text-left">
                   <h3 className="text-2xl font-bold text-slate-900">
                     {physician.name}
